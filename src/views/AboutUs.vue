@@ -7,58 +7,6 @@
       <CompanyTimeLine 
         :timeline="companyTimeline"
       />
-      <!-- <div class="company-intro">
-        <div class="content">
-          <h2>公司简介</h2>
-          <h3>荔枝集团致力于用声音将人们联系在一起</h3>
-          <p>欢迎来到科创关于我们页面！这里是关于我们的详细介绍。</p>
-        </div>
-        <div class="intro-content-group">
-          <div class="intro-content-item">
-              <img src="../assets/3.jpg" alt="企业愿景">
-              <div class="text-overlay">
-                  <h3 class="item-title">企业愿景:</h3>
-                  <p class="item-title-p">创建全球最大声音平台，帮助人们用声音连接彼此，更紧密沟通，更快乐生活。</p>
-              </div>
-          </div>
-          <div class="intro-content-item">
-              <img src="../assets/4.jpg" alt="企业口号">
-              <div class="text-overlay">
-                  <h3 class="item-title">企业口号:</h3>
-                  <p class="item-title-p">用声音，在一起</p>
-              </div>
-          </div>
-        </div>
-        <div class="content">
-          <h2>团队管理</h2>
-        </div>
-        <div class="manage-group">
-          <div class="manage-item">
-            <div class="content-left">
-              <h2>科创团队</h2>
-              <h3>荔枝集团致力于用声音将人们联系在一起</h3>
-              <p>欢迎来到科创关于我们页面！这里是关于我们的详细介绍。</p>
-            </div>
-            <img src="../assets/1.jpg" alt="团队大楼" height="300">
-          </div>
-        </div>
-      <div class="enterprise-container">
-        <div class="enterprise-item">
-          <div class="content">
-            <h2>企业价值观</h2>
-          </div>
-          <div class="enterprise-list-item">
-            <button 
-              v-for="(item,index) in items"
-              :key="item.id"
-              class="list-button"
-              :class="{'active':activeIndex === index}"
-              @mouseenter="activeIndex = index">{{item.title}}
-            </button>
-          </div>
-        </div>
-      </div>
-      </div> -->
   </div>
   </template>
   
@@ -79,13 +27,13 @@
     data(){
       return {
         companyTimeline:[
-          {year:'2018', des:"公司成立初始时期", image:"@/assets/1.jpg?text=2018"},
-          {year:'2019', des:"公司成立初始时期推出首款产品", image:"@/assets/5.jpg?text=2019"},
-          {year:'2020', des:"公司成立初始时期获得A轮融资", image:"@/assets/3.jpg?text=2020"},
-          {year:'2021', des:"公司成立初始时期拓展国际市场", image:"@/assets/4.jpg?text=2021"},
-          {year:'2022', des:"公司成立初始时期推出新产品线", image:"@/assets/5.jpg?text=2022"},
-          {year:'2023', des:"公司成立初始时期获得B轮融资", image:"@/assets/4.jpg?text=2023"},
-          {year:'2024', des:"公司成立初始时期建立研发中心", image:"@/assets/3.jpg?text=2024"},
+          {year:'2018', des:"公司成立初始时期", image:"1.jpg?text=2018"},
+          {year:'2019', des:"公司成立初始时期推出首款产品", image:"5.jpg?text=2019"},
+          {year:'2020', des:"公司成立初始时期获得A轮融资", image:"3.jpg?text=2020"},
+          {year:'2021', des:"公司成立初始时期拓展国际市场", image:"4.jpg?text=2021"},
+          {year:'2022', des:"公司成立初始时期推出新产品线", image:"5.jpg?text=2022"},
+          {year:'2023', des:"公司成立初始时期获得B轮融资", image:"4.jpg?text=2023"},
+          {year:'2024', des:"公司成立初始时期建立研发中心", image:"3.jpg?text=2024"},
         ]
       }
     }

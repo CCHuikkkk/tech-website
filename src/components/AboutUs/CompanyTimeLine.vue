@@ -12,12 +12,12 @@
             @mouseenter="updateContent(item)"
             >{{item.year}}
         </div>
-        <!-- <div class="timeline-content-container">
-            <div class="timeline-content.item">
-                <img :src="selectedYear.image" alt="Year Image" />
-                <p class="dec">{{ selectedYear.description }}</p>
-            </div>
-        </div> -->
+    </div>
+    <div class="timeline-content-container">
+        <div class="timeline-content-item">
+            <img :src="selectedYear.image" alt="Year Image" />
+            <p class="dec">{{ selectedYear.des }}</p>
+        </div>
     </div>
 </div>
 </template>
@@ -37,7 +37,7 @@ export default {
     },
 
     setup(props){
-        const selectedYear = ref(props.timeline.length ? props.timeline[0] : { year: '', description: '', image: '' });
+        const selectedYear = ref(props.timeline.length ? props.timeline[0] : { year: '', des: '', image: '' });
         const updateContent = (year)=>{
             selectedYear.value = year
         };
@@ -46,8 +46,7 @@ export default {
             selectedYear,
             updateContent
         }
-    }
-
+    },
   };
 </script>
 
@@ -68,6 +67,8 @@ export default {
     justify-content: center;
     gap: 20px;
     margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(23, 23, 23, 0.4);
 }
 .timeline-item{
     padding: 1rem;
@@ -83,23 +84,25 @@ export default {
 .timeline-content-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px 20px;
 }
-.timeline-content.item{
+.timeline-content-item{
     display: flex;
     align-items: center;
     justify-content:flex-start;
     gap: 20px;
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
 }
-.timeline-content.item img{
-    width: 40%;
+.timeline-content-item img{
+    width: 60%;
     height: auto;
-    margin-right: 2rem;
 }
-.timeline-content.item des{
+.timeline-content-item des{
     width: 60%;
 }
 </style>
