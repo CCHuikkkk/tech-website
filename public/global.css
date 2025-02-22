@@ -36,6 +36,7 @@ body {
     display: flex;
     gap: 20px; /* 导航栏按钮之间的间距 */
     margin: 0 auto; /* 水平居中 */
+    width: 800px;
   }
   .nav-item {
     text-decoration: none; /* 去掉下划线 */
